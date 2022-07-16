@@ -1,0 +1,9 @@
+{
+    "photos": [
+        {"description":"Acropolle Atenas / Grécia", "year": 2022, "src": "./src/App/Gallery/photo2.jpg"},
+        {"description":"Warner Bros London Harry Potter House", "year": 2022, "src": "./src/App/Gallery/photo1.jpg"},
+        {"description":"Warner Bros London Harry Potter Castle", "year": 2022, "src": "./src/App/Gallery/photo3.jpg"},
+        {"description":"Warner Bros London Harry Potter Diagon Alley ", "year": 2022, "src": "./src/App/Gallery/photo4.jpg"},
+        {"description":"Warner Bros London Harry Potter Gringotts", "year": 2022, "src": "./src/App/Gallery/photo5.jpg"}
+    ]
+}

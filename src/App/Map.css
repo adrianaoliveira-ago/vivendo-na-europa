@@ -1,0 +1,26 @@
+.map-container {
+  display: flex;
+  /* padding-left: 200px; */
+  /* padding-right: 200px; */
+  width: 100%;
+  padding-top: 20px;
+  background-color: #ffc9bc;
+  padding-bottom: 20px;
+}
+.map-country-ul {
+  padding-left: 0px;
+  font-weight: bolder;
+  display: inline-block;
+  text-align: left;
+}
+
+.map-country-list {
+  text-align: center;
+  flex: 1;
+}
+.map-embed {
+  flex: 1;
+}
+.map-flags {
+  font-size: 40px;
+}

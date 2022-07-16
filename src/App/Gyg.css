@@ -1,0 +1,40 @@
+.Gyg-container {
+  background-color: #f1c16e;
+  /* width: 90%; */
+  justify-content: space-around;
+  /* margin: 10px; */
+  border-radius: 50px;
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 15px;
+  width: 700px;
+  box-shadow: 10px 5px 5px rgba(101, 91, 91, 0.346);
+}
+
+.Gyg-title {
+  text-align: center;
+}
+
+.Gyg-opinion {
+  flex: 1;
+  padding-left: 15px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Gyg-rating {
+  font-size: x-large;
+  margin: 5px;
+}
+.Gyg-year-rating {
+  text-align: right;
+}
+.Gyg-container-arrow {
+  display: flex;
+  align-items: center;
+}
+.Gyg-style-text {
+  font-style: italic;
+}

@@ -1,0 +1,15 @@
+.aboutme-img {
+  width: 50%;
+  height: fit-content;
+}
+
+.aboutme-container {
+  display: flex;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+}
+.aboutme-text {
+  padding-left: 50px;
+  text-align: justify;
+}

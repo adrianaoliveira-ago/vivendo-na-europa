@@ -1,0 +1,10 @@
+.travel-page-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.travel-page-imag {
+  width: 40%;
+}

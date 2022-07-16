@@ -1,0 +1,25 @@
+#page-footer {
+  background-color: #ffd77c;
+  /* background-color: #ffd29c; */
+  padding: 10px;
+  font-family: Monaco, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.footer-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.content-image {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 200px;
+}
+.BlogPage-img2 {
+  width: 500px;
+}

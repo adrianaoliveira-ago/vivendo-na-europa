@@ -1,0 +1,42 @@
+.hero-img {
+  object-fit: scale-down;
+  width: 100%;
+  background-color: #ffc8d5;
+  padding-bottom: 15px;
+  height: 500px;
+  object-fit: cover;
+  width: -webkit-fill-available;
+}
+.hero-background-color {
+  background-color: #ffc8d5;
+  padding-bottom: 15px;
+  height: 500px;
+  object-fit: cover;
+  width: -webkit-fill-available;
+  position: relative;
+}
+
+.hero-text-photo {
+  position: absolute;
+  font-style: oblique;
+  bottom: 0px;
+  padding: 80px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 69px;
+
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+}
+
+.hero-text-style {
+  margin: unset;
+  /* color: snow; */
+}
+
+.hero-text-style-2 {
+  margin: unset;
+  /* color: snow; */
+}

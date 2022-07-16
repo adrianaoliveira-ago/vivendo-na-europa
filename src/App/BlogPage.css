@@ -1,0 +1,69 @@
+.blog-page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.blog-page-subtitle {
+  width: 93%;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: -7px;
+}
+.BlogPage-img {
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 400px;
+  object-fit: cover;
+  width: -webkit-fill-available;
+}
+
+.BlogPage-Text-1 {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.blog-page-hashtags {
+  display: flex;
+}
+
+.BlogPage-Text-Maceio {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.blog-page-arrow-Down-sub {
+  display: flex;
+}
+
+.blog-page-viagem-para-atenas {
+  margin-left: 10px;
+}
+
+/* .Blog-page-padding {
+  padding-left: 200px;
+  padding-right: 200px;
+} */
+.blog-post-padding {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.blog-page-arrow-rotate-up {
+  transform: rotate(180deg);
+}
+
+.BlogPage-img:hover {
+  filter: contrast(1.1) brightness(1.2);
+}
+
+.Blog-page-padding2 {
+  padding-top: 145px;
+}
