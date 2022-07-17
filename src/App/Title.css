@@ -19,6 +19,6 @@
   text-shadow: 10px 5px 5px rgb(101 91 91 / 22%);
 }
 
-/* .title-text-div {
-  padding-top: 145px;
-} */
+.title-text {
+  font-family: FontNoot;
+ }

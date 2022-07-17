@@ -12,3 +12,10 @@ body {
 #root {
   height: 100vh;
 }
+
+/* https://www.w3schools.com/css/css3_fonts.asp */
+/* https://freefontsvault.com/noot-font-download-free/ */
+@font-face {
+  font-family: FontNoot;
+  src: url(Noot.otf);
+}
