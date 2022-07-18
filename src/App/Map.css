@@ -23,4 +23,9 @@
 }
 .map-flags {
   font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.jvectormap-zoomin, .jvectormap-zoomout {
+  display: none;
 }

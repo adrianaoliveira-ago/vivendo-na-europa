@@ -34,9 +34,13 @@
 .hero-text-style {
   margin: unset;
   /* color: snow; */
+  font-family: 'FontNoot';
+  -webkit-text-stroke: 0.1px #a65e5e;
 }
 
 .hero-text-style-2 {
   margin: unset;
   /* color: snow; */
+  font-family: 'FontNoot';
+  -webkit-text-stroke: 0.1px #a65e5e;
 }
