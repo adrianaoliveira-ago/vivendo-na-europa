@@ -27,14 +27,25 @@ function Map() {
 
   const mapData = {
     BR: 0,
-    // CN: 0,
-    // IN: 9900,
-    // SA: 86,
-    // EG: 70,
-    // SE: 0,
-    // FI: 0,
-    // FR: 0,
-    // US: 0,
+    FI: 0,
+    FR: 0,
+    DE: 0,
+    PT: 0,
+    CZ: 0,
+    PL: 0,
+    NL: 0,
+    SE: 0,
+    DK: 0,
+    HU: 0,
+    IT: 0,
+    EE: 0,
+    ES: 0,
+    GB: 0,
+    QA: 0,
+    BE: 0,
+    LU: 0,
+    RO: 0,
+    GR: 0,
   };
 
   return (
@@ -80,7 +91,7 @@ function Map() {
               regions: [
                 {
                   values: mapData, //this is your data
-                  scale: ["#146804", "#ff0000"], //your color game's here
+                  scale: ["#ED66B3"], //your color game's here
                   normalizeFunction: "polynomial",
                 },
               ],
