@@ -6,6 +6,7 @@
   height: 500px;
   object-fit: cover;
   width: -webkit-fill-available;
+  /* animation: 10s ease-in-out 0s infinite alternate none running lazy-zoom; */
 }
 .hero-background-color {
   background-color: #ffc8d5;
@@ -29,18 +30,22 @@
 
   color: #ffffff;
   text-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+  
 }
 
-.hero-text-style {
-  margin: unset;
-  /* color: snow; */
-  font-family: 'FontNoot';
-  -webkit-text-stroke: 0.1px #a65e5e;
-}
+
 
 .hero-text-style-2 {
   margin: unset;
   /* color: snow; */
   font-family: 'FontNoot';
   -webkit-text-stroke: 0.1px #a65e5e;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero-img , .hero-background-color {
+   height: 300px;
+  }
+  
 }

@@ -27,10 +27,10 @@ const Hero = () => {
 
   return (
     <div className="hero-background-color">
-      <div className="hero-text-photo">
+      {/* <div className="hero-text-photo">
         <h4 className="hero-text-style">VIVENDO NA EUROPA</h4>
         <h4 className="hero-text-style-2">por Adriana Gonzaga</h4>
-      </div>
+      </div> */}
 
       <img
         key={count}

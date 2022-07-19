@@ -19,3 +19,10 @@ body {
   font-family: FontNoot;
   src: url(Noot.otf);
 }
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  
+  }
+} */

@@ -9,6 +9,13 @@
   position: relative;
 }
 
+@media only screen and (max-width: 600px) {
+  #page-footer {
+    justify-content: flex-start;
+  
+  }
+}
+
 .footer-text {
   padding-top: 15px;
   padding-bottom: 15px;

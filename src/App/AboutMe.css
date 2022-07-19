@@ -1,6 +1,7 @@
 .aboutme-img {
   width: 50%;
   height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .aboutme-container {
@@ -8,6 +9,7 @@
   padding-left: 300px;
   padding-right: 300px;
   padding-bottom: 20px;
+  
 }
 .aboutme-text {
   padding-left: 50px;
