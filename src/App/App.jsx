@@ -15,10 +15,10 @@ function Content() {
       <Hero />
       <Title name="Vivendo na Europa" />
       <AboutMe />
-      <Map />
-      <Gallery />
-      <Videos />
-      <Gyg />
+      {/* <Map /> */}
+      {/* <Gallery /> */}
+      {/* <Videos /> */}
+      {/* <Gyg /> */}
     </div>
   );
 }
