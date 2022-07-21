@@ -21,7 +21,13 @@
 
 .title-text {
   font-family: FontNoot;
-  -webkit-text-stroke: 0.5px #0A0A06;
+  -webkit-text-stroke: 0.5px #0a0a06;
   font-size: 50px;
   text-transform: uppercase;
- }
+}
+
+@media only screen and (max-width: 600px) {
+  .title-text {
+    font-size: 30px;
+  }
+}

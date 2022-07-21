@@ -7,11 +7,21 @@
 }
 
 .videos-videos {
-  /* padding-left: 90px; */
-  /* padding-right: 20px; */
   padding-bottom: 40px;
-  /* padding-top: 25px; */
+
   display: flex;
   display: flex;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .videos-videos {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+
+  .videos-videos iframe {
+    padding: 10px;
+  }
 }

@@ -26,6 +26,20 @@
   padding-bottom: 20px;
 }
 
-.jvectormap-zoomin, .jvectormap-zoomout {
+.jvectormap-zoomin,
+.jvectormap-zoomout {
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .map-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .map-flags {
+    font-size: 30px;
+  }
 }

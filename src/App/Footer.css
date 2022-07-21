@@ -12,7 +12,6 @@
 @media only screen and (max-width: 600px) {
   #page-footer {
     justify-content: flex-start;
-  
   }
 }
 
@@ -29,4 +28,10 @@
 }
 .BlogPage-img2 {
   width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-image {
+    height: 140px;
+  }
 }

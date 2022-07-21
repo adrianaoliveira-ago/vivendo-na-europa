@@ -6,7 +6,6 @@ const Title = ({ name }) => {
       <h1 className="title-text">{name}</h1>
     </div>
   );
-  ç;
 };
 
 export default Title;

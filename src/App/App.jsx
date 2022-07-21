@@ -15,9 +15,9 @@ function Content() {
       <Hero />
       <Title name="Vivendo na Europa" />
       <AboutMe />
-      {/* <Map /> */}
-      {/* <Gallery /> */}
-      {/* <Videos /> */}
+      <Map />
+      <Gallery />
+      <Videos />
       {/* <Gyg /> */}
     </div>
   );
