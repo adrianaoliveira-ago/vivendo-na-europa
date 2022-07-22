@@ -39,3 +39,23 @@
 .Gyg-style-text {
   font-style: italic;
 }
+
+@media only screen and (max-width: 600px) {
+  .Gyg-opinion {
+    display: none;
+  }
+
+  .Gyg-container {
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    min-width: 18px;
+    width: 10px;
+  }
+}

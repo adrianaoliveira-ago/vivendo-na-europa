@@ -18,7 +18,7 @@ function Content() {
       <Map />
       <Gallery />
       <Videos />
-      {/* <Gyg /> */}
+      <Gyg />
     </div>
   );
 }

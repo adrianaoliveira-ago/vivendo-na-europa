@@ -39,6 +39,7 @@ function Gyg() {
       <div className="Gyg-container-arrow">
         <div className="Gyg-gallery-arrow">
           <img
+            className="arrow-left"
             src={ArrowLeft}
             // className="gallery-arrowleft"
             onClick={onArrowLeftClick}
@@ -71,6 +72,7 @@ function Gyg() {
         </div>
         <div>
           <img
+            className="arrow-right"
             src={ArrowRight}
             // className="gallery-arrowright"
             onClick={onArrowRightClick}
