@@ -5,5 +5,8 @@
         {"description":"Warner Bros London Harry Potter Castle", "year": 2022, "src": "./src/App/Gallery/photo3.jpg"},
         {"description":"Warner Bros London Harry Potter Diagon Alley ", "year": 2022, "src": "./src/App/Gallery/photo4.jpg"},
         {"description":"Warner Bros London Harry Potter Gringotts", "year": 2022, "src": "./src/App/Gallery/photo5.jpg"}
-    ]
+    ],
+    "name": "My Gallery",
+    "creationDate": "23.07.2022"
+
 }

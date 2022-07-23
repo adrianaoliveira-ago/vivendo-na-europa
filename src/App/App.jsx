@@ -8,6 +8,8 @@ import Videos from "./Videos";
 import Gyg from "./Gyg";
 import Title from "./Title";
 import Hero from "./Hero";
+import GalleryHome from "./Gallery/gallery.json";
+// import GalleryLondres from "./Gallery/gallery.json";
 
 function Content() {
   return (
@@ -16,7 +18,8 @@ function Content() {
       <Title name="Vivendo na Europa" />
       <AboutMe />
       <Map />
-      <Gallery />
+      <Gallery list={GalleryHome.photos} />
+      {/* <Gallery list={GalleryLondres.photos} /> */}
       <Videos />
       <Gyg />
     </div>

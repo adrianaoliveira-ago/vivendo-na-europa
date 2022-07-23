@@ -1,17 +1,17 @@
 import "./styles.css";
-// import GalleryPhoto1 from "./photo1.jpg";
+
 import ArrowLeft from "../Icons/arrow-left.svg";
 import ArrowRight from "../Icons/arrow-right.svg";
-import GalleryList from "./gallery.json";
+
 import { useState } from "react";
 
-function Gallery() {
-  const [selectedImage, setSelectedImage] = useState(GalleryList.photos[0]);
+function Gallery({ list }) {
+  const [selectedImage, setSelectedImage] = useState(list[0]);
   const [count, setCount] = useState(0);
 
   function onArrowLeftClick() {
     console.log("Cliquei no botão");
-    console.log(GalleryList);
+    console.log(list);
     let newCount = count - 1;
 
     if (newCount < 0) {
@@ -20,8 +20,9 @@ function Gallery() {
 
     setCount(newCount);
     console.log(newCount);
-    setSelectedImage(GalleryList.photos[newCount]);
+    setSelectedImage(list[newCount]);
   }
+
   function onArrowRightClick() {
     console.log("Cliquei no botão direito");
     let newCount = count + 1;
@@ -32,7 +33,7 @@ function Gallery() {
 
     setCount(newCount);
     console.log(newCount);
-    setSelectedImage(GalleryList.photos[newCount]);
+    setSelectedImage(list[newCount]);
   }
 
   return (
@@ -45,6 +46,7 @@ function Gallery() {
           className="gallery-arrowleft"
           onClick={onArrowLeftClick}
         />
+
         <div className="gallerry-photo-legend">
           <img
             src={selectedImage.src}
@@ -55,6 +57,7 @@ function Gallery() {
             <strong>{selectedImage.year}</strong> - {selectedImage.description}
           </p>
         </div>
+
         <img
           src={ArrowRight}
           className="gallery-arrowright"

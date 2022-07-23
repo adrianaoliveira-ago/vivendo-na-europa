@@ -30,6 +30,7 @@ const BlogPage = () => {
             hashtagName="Atenas"
             hashtagLink="https://www.instagram.com/explore/tags/athens/?hl=de"
           />
+
           <BlogPost
             subtitle="Viagem para Londres"
             url="https://www.youtube.com/embed/fk1ZmM486nA"

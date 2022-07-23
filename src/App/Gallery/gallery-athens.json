@@ -1,0 +1,9 @@
+{
+    "photos": [
+        {"description":"Acropolle Atenas / Grécia", "year": 2022, "src": "./src/App/Gallery/photo2.jpg"},
+        {"description":"Acropolle Atenas / Grécia", "year": 2022, "src": "./src/App/Gallery/photo2.jpg"}
+    ],
+    "name": "My Gallery",
+    "creationDate": "23.07.2022"
+
+}
