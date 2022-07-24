@@ -10,9 +10,10 @@ const BlogPost = ({
   text1,
   text2,
   image2,
-  hashtagName,
-  hashtagLink,
-  hashtagColor = "#FFC9BC",
+  // hashtagName,
+  // hashtagLink,
+  // hashtagColor = "#FFC9BC",
+  hashtagList = [],
 }) => {
   const [estaAberto, mudarValorPara] = useState(false);
 
@@ -42,21 +43,19 @@ const BlogPost = ({
           </div>
 
           <div className="blog-page-hashtags">
-            {hashtagName && ( // type of conditional - same as if (hashtagName)
-              <Hashtag
-                // className="blog-page-hashtag-effect"
-                name={hashtagName}
-                color={hashtagColor}
-                link={hashtagLink}
-              ></Hashtag>
-            )}
-            {/* <Hashtag name="Viagem" color="#FFC8D5" onClick="goToLink"></Hashtag> */}
+            {hashtagList.map((item) => {
+              return (
+                <Hashtag
+                  name={item.name}
+                  color={item.color || "#FFC9BC"}
+                  link={item.link}
+                ></Hashtag>
+              );
+            })}
           </div>
         </div>
 
-        {/* <span className="filter-on-hover"> */}
         <img src={image} className="BlogPage-img" onClick={onArrowClick} />
-        {/* </span> */}
 
         {estaAberto && <p className="BlogPage-Text-1">{text1}</p>}
         {estaAberto && <img src={image2} className="BlogPage-img2" />}

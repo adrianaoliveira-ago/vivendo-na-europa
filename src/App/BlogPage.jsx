@@ -12,6 +12,20 @@ import Title from "./Title";
 
 // function BlogPage() {
 const BlogPage = () => {
+  const hashtagListAtenas = [
+    {
+      name: "travel",
+      color: "pink",
+      url: "https://www.instagram.com/explore/tags/travel/?hl=de",
+    },
+
+    {
+      name: "Atenas",
+      color: "#FFC9BC",
+      url: "https://www.instagram.com/explore/tags/athens/?hl=de",
+    },
+  ];
+
   return (
     <div className="Blog-page-padding">
       <Header></Header>
@@ -27,8 +41,9 @@ const BlogPage = () => {
           tour was great, the guide was friendly and we had a nice time!"
             image2={BlogPostGreece2}
             text2="Greece (Greek: Ελλάδα, romanized: Elláda, [elaða]), officially the Hellenic Republic,[a] is a country in Southeast Europe. It is situated on the southern tip of the Balkans, and is located at the crossroads of Europe, Asia, and Africa. Greece shares land borders with Albania to the northwest, North Macedonia and Bulgaria to the north, and Turkey to the northeast. The Aegean Sea lies to the east of the mainland, the Ionian Sea to the west, and the Sea of Crete and the Mediterranean Sea to the south. Greece has the longest coastline on the Mediterranean Basin, featuring thousands of islands. The country consists of nine traditional geographic regions, and has a population of approximately 10.7 million. Athens is the nation's capital and largest city, followed by Thessaloniki."
-            hashtagName="Atenas"
-            hashtagLink="https://www.instagram.com/explore/tags/athens/?hl=de"
+            // hashtagName="Atenas"
+            // hashtagLink="https://www.instagram.com/explore/tags/athens/?hl=de"
+            hashtagList={hashtagListAtenas}
           />
 
           <BlogPost

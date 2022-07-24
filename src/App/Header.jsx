@@ -7,6 +7,23 @@ function goToHomePage() {
   location.href = "/";
 }
 function Header() {
+  const headerlinks = [
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/vivendo_na_europa__/?hl=de",
+    },
+
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/Vivendo.na.Europa.ve",
+    },
+
+    {
+      name: "Blog",
+      link: "/blog",
+    },
+  ];
+
   return (
     <header id="page-header">
       <nav className="nav">
@@ -18,28 +35,15 @@ function Header() {
         />
 
         <ul className="nav-items">
-          <li className="nav-items">
-            <a
-              href="https://www.instagram.com/vivendo_na_europa__/?hl=de"
-              target="_blank"
-            >
-              <span class="underline-on-hover">{"Instagram "}</span>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.facebook.com/Vivendo.na.Europa.ve"
-              target="_blank"
-            >
-              <span class="underline-on-hover">{"Facebook "}</span>
-            </a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/blog" target="_blank">
-              <span class="underline-on-hover">{"Blog "}</span>
-            </a>
-          </li>
+          {headerlinks.map((item) => {
+            return (
+              <li className="nav-items">
+                <a href={item.link} target="_blank">
+                  <span class="underline-on-hover">{item.name}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>
