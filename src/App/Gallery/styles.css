@@ -8,9 +8,9 @@
 }
 
 .gallery-photo1 {
-  width: 500px;
-  min-width: 500px;
-  min-height: 375px;
+  height: 500px;
+  /* min-width: 500px;
+  min-height: 375px; */
 
   animation-name: animationZoom;
   animation-duration: 1s;

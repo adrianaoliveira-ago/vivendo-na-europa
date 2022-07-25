@@ -5,7 +5,7 @@ import ArrowRight from "../Icons/arrow-right.svg";
 
 import { useState } from "react";
 
-function Gallery({ list }) {
+function Gallery({ list, title }) {
   const [selectedImage, setSelectedImage] = useState(list[0]);
   const [count, setCount] = useState(0);
 
@@ -15,7 +15,7 @@ function Gallery({ list }) {
     let newCount = count - 1;
 
     if (newCount < 0) {
-      newCount = 4;
+      newCount = list.length - 1; // size of the array => list.length
     }
 
     setCount(newCount);
@@ -27,7 +27,8 @@ function Gallery({ list }) {
     console.log("Cliquei no botão direito");
     let newCount = count + 1;
 
-    if (newCount > 4) {
+    if (newCount > list.length - 1) {
+      // size of the array => list.length
       newCount = 0;
     }
 
@@ -38,7 +39,7 @@ function Gallery({ list }) {
 
   return (
     <div className="gallery-container">
-      <h2 className="gallery-title">Gallery</h2>
+      <h2 className="gallery-title">{title}</h2>
 
       <div className="gallery-photo-arrow">
         <img

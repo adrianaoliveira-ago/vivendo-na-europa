@@ -18,7 +18,7 @@ function Content() {
       <Title name="Vivendo na Europa" />
       <AboutMe />
       <Map />
-      <Gallery list={GalleryHome.photos} />
+      <Gallery list={GalleryHome.photos} title={"My Favourites Photos"} />
       {/* <Gallery list={GalleryLondres.photos} /> */}
       <Videos />
       <Gyg />

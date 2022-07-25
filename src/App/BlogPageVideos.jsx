@@ -1,20 +1,24 @@
 import "./BlogPageVideos.css";
 
-const BlogPageVideos = ({ url }) => {
+const BlogPageVideos = ({ list }) => {
   return (
     <div className="blog-page-videos">
       <h2 className="blog-page-videos-title">videos you might like</h2>
 
       <div className="blog-page-videos-videos">
-        <iframe
-          width="560"
-          height="315"
-          src={url}
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        {list.map((item) => {
+          return (
+            <iframe
+              width="560"
+              height="315"
+              src={item}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          );
+        })}
       </div>
     </div>
   );

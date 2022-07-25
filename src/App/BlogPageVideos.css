@@ -1,6 +1,6 @@
 .blog-page-videos-videos {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .blog-page-videos-title {

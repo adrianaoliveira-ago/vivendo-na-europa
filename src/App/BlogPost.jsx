@@ -2,6 +2,7 @@ import BlogPageVideos from "./BlogPageVideos";
 import Hashtag from "./Hashtag";
 import ArrowDown from "./Icons/arrow-down.svg";
 import { useState } from "react";
+import Gallery from "./Gallery";
 
 const BlogPost = ({
   subtitle,
@@ -9,11 +10,13 @@ const BlogPost = ({
   image,
   text1,
   text2,
-  image2,
+  // image2,
   // hashtagName,
   // hashtagLink,
   // hashtagColor = "#FFC9BC",
   hashtagList = [],
+  galleryList = [],
+  urlList = [],
 }) => {
   const [estaAberto, mudarValorPara] = useState(false);
 
@@ -58,10 +61,18 @@ const BlogPost = ({
         <img src={image} className="BlogPage-img" onClick={onArrowClick} />
 
         {estaAberto && <p className="BlogPage-Text-1">{text1}</p>}
-        {estaAberto && <img src={image2} className="BlogPage-img2" />}
+
+        {estaAberto && galleryList.length > 0 && (
+          <Gallery list={galleryList} title={"Gallery"}></Gallery>
+        )}
+
+        {/* {estaAberto && <img src={image2} className="BlogPage-img2" />} */}
+
         {estaAberto && <p className="BlogPage-Text-Maceio">{text2}</p>}
       </div>
-      {url && estaAberto && <BlogPageVideos url={url}></BlogPageVideos>}
+      {urlList.length > 0 && estaAberto && (
+        <BlogPageVideos list={urlList}></BlogPageVideos>
+      )}
     </div>
   );
 };
