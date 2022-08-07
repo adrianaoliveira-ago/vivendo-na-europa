@@ -2,6 +2,7 @@ import coffeeImg from "./Footer/coffee-image.png";
 import Imageok from "./Footer/image-ok.png";
 import { useState } from "react";
 import "./Footer.css";
+import ArrowUp from "./ArrowUp.png";
 
 function Footer() {
   const arrayImage = [coffeeImg, Imageok];
@@ -24,6 +25,15 @@ function Footer() {
   const today = new Date();
   const year = today.getFullYear();
 
+  function scrollToTop() {
+    // Scroll to top logic
+    const rootElement = document.documentElement;
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <footer id="page-footer">
       <small className="footer-text">{year} Vivendo na Europa</small>
@@ -32,6 +42,7 @@ function Footer() {
         className="content-image"
         onClick={onChangeImage}
       />
+      <img className="arrowup-style" src={ArrowUp} onClick={scrollToTop} />
     </footer>
   );
 }
