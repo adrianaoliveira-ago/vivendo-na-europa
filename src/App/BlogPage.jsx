@@ -9,6 +9,7 @@ import BlogPostLondon from "./BlogPostLondon.jpg";
 import BlogPostBerlin from "./BlogPostBerlin.jpg";
 import BlogPostBerlin2 from "./BlogPostBerlin2.jpg";
 import Title from "./Title";
+import SocialIcons from "./SocialIcons";
 
 // function BlogPage() {
 const BlogPage = () => {
@@ -104,6 +105,7 @@ const BlogPage = () => {
       <Header></Header>
       <div className="Blog-page-padding2">
         <Title name="Vivendo na Europa Travel Blog"></Title>
+        <SocialIcons />
         <div className="blog-post-padding">
           {/* BlogPost Greece */}
 

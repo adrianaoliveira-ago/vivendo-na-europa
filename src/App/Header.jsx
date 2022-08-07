@@ -2,10 +2,9 @@ import logoImg from "./logo.png";
 import "./Header.css";
 
 function goToHomePage() {
-  // console.log("Cliquei no logo");
-  // console.log(GalleryList);
   location.href = "/";
 }
+
 function Header() {
   const headerlinks = [
     {

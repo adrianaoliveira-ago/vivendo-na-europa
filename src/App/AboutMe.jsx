@@ -1,22 +1,8 @@
 import AboutMeImg from "./AboutMe.jpg";
 import "./AboutMe.css";
-import { useState } from "react";
+import SocialIcons from "./SocialIcons";
 
 function AboutMe() {
-  // const [estaAberto, mudarValorPara] = useState(true);
-
-  // const titleOnClick = () => {
-  //   console.log(estaAberto);
-
-  //   if (estaAberto === false) {
-  //     mudarValorPara(true);
-  //   }
-
-  //   if (estaAberto === true) {
-  //     mudarValorPara(false);
-  //   }
-  // };
-
   return (
     <div className="aboutme-container">
       <img src={AboutMeImg} className="aboutme-img" />
@@ -34,7 +20,8 @@ function AboutMe() {
           <br />
           Enjoy 🙃
         </p>
-        {/* // )} */}
+
+        <SocialIcons />
       </div>
     </div>
   );
