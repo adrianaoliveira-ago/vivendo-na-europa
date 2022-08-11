@@ -9,6 +9,7 @@ import Gyg from "./Gyg";
 import Title from "./Title";
 import Hero from "./Hero";
 import GalleryHome from "./Gallery/gallery.json";
+import NewGalleryHomePage from "./NewGalleryHomePage";
 // import GalleryLondres from "./Gallery/gallery.json";
 
 function Content() {
@@ -20,6 +21,7 @@ function Content() {
       <Map />
       <Gallery list={GalleryHome.photos} title={"My Favourites Photos"} />
       {/* <Gallery list={GalleryLondres.photos} /> */}
+      <NewGalleryHomePage />
       <Videos />
       <Gyg />
     </div>

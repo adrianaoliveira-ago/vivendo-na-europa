@@ -8,6 +8,8 @@ import BlogPage from "./App/BlogPage";
 import TravelPage from "./App/TravelPage";
 import SnowPage from "./App/SnowPage";
 import CheatPage from "./App/CheatPage";
+import GridGallery from "./App/GridGallery";
+import LightBulb from "./App/LightBulb";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +20,8 @@ ReactDOM.render(
         <Route path="travel" element={<TravelPage />} />
         <Route path="snow" element={<SnowPage />} />
         <Route path="cheat" element={<CheatPage />} />
+        <Route path="gridGallery" element={<GridGallery />} />
+        <Route path="lightBulb" element={<LightBulb />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

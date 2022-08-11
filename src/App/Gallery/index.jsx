@@ -1,8 +1,6 @@
 import "./styles.css";
-
 import ArrowLeft from "../Icons/arrow-left.svg";
 import ArrowRight from "../Icons/arrow-right.svg";
-
 import { useState } from "react";
 
 function Gallery({ list, title }) {

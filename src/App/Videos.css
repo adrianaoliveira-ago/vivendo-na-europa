@@ -1,6 +1,7 @@
 .videos-container {
   background-color: #ffc8d5;
   width: 100%;
+  margin-top: 25px;
 }
 .videos-title {
   text-align: center;

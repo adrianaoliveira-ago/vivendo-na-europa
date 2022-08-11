@@ -18,6 +18,7 @@ function Footer() {
     }
 
     setCount(newCount);
+
     console.log(newCount);
     // setSelectedImage(GalleryList.photos[newCount]);
   }
