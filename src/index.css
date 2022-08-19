@@ -20,9 +20,16 @@ body {
   src: url(Noot.otf);
 }
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  
-  }
+/* variables default */
+body {
+  --main-bg-color: white;
+}
+
+/* variables dark mode */
+body.dark-mode {
+  --main-bg-color: black;
+}
+
+/* #root {
+  background-color: var(--main-bg-color);
 } */

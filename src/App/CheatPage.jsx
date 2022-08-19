@@ -11,7 +11,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const CheatPage = () => {
-  const codeString = `
+  const codeStringOnClick = `
     const functionToBeInvoked = () => {
         // this will be executed when img is clicked
     }
@@ -26,7 +26,18 @@ const CheatPage = () => {
         ...
     )
   `;
+  const codeStringNewComponent = `
+    // if you need CSS, 
+    import "./MyComponent.css";
+    // create a new a file MyComponent.jsx with this content
+    const MyCompoment = () => { 
+      return (
+        <div>Hello World</div>
+      )
+    } 
 
+    export default MyComponent;
+    `;
   return (
     <div>
       <Header />
@@ -35,10 +46,13 @@ const CheatPage = () => {
 
         <h1>How to add onClick to an html Element</h1>
         <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
-          {codeString}
+          {codeStringOnClick}
         </SyntaxHighlighter>
 
-        <h1>How to create a new react component and add props</h1>
+        <h1>How to create a new react component </h1>
+        <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
+          {codeStringNewComponent}
+        </SyntaxHighlighter>
       </div>
       <Footer />
     </div>

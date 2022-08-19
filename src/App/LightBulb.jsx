@@ -3,29 +3,19 @@ import LightBulbOff from "./LightBulbOff.jpg";
 import { useState } from "react";
 
 function LightBulb() {
-  const arrayImage = [LightBulbOn, LightBulbOff];
-  const [light, setLight] = useState(0);
+  const [isLightOn, setlight] = useState(true); // isLightOn state is a boolean (true or false)
 
   function onChangeLight() {
-    console.log("Cliquei no botão");
-    // console.log(GalleryList);
-    let LightBulbOff = light + 1;
-
-    if (LightBulbOff > 1) {
-      LightBulbOff = 0;
-    }
-
-    setLight(LightBulbOff);
-
-    // console.log(LightBulbOff);
-    // setSelectedImage(GalleryList.photos[newCount]);
+    console.log(isLightOn);
+    if (isLightOn === true) {
+      setlight(false);
+    } else setlight(true);
   }
 
   return (
     <div>
       <img
-        src={arrayImage[light]}
-        //   className="content-image"
+        src={isLightOn ? LightBulbOn : LightBulbOff} // ternary operator => boolean ? if true : if false
         onClick={onChangeLight}
       />
     </div>

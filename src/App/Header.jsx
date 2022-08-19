@@ -1,5 +1,7 @@
 import logoImg from "./logo.png";
 import "./Header.css";
+import DarkMode from "./DarkMode";
+import "./DarkMode.css";
 
 function goToHomePage() {
   location.href = "/";
@@ -43,6 +45,7 @@ function Header() {
               </li>
             );
           })}
+          <DarkMode />
         </ul>
       </nav>
     </header>

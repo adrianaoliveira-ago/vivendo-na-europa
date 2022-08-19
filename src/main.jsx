@@ -10,6 +10,8 @@ import SnowPage from "./App/SnowPage";
 import CheatPage from "./App/CheatPage";
 import GridGallery from "./App/GridGallery";
 import LightBulb from "./App/LightBulb";
+import CounterPage from "./App/CounterPage";
+import ThermostatPage from "./App/ThermostatPage";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +24,8 @@ ReactDOM.render(
         <Route path="cheat" element={<CheatPage />} />
         <Route path="gridGallery" element={<GridGallery />} />
         <Route path="lightBulb" element={<LightBulb />} />
+        <Route path="counter" element={<CounterPage />} />
+        <Route path="thermostat" element={<ThermostatPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

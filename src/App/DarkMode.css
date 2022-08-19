@@ -1,0 +1,7 @@
+.style-icon-dark-mode {
+  display: flex;
+  height: 30px;
+  justify-content: end;
+  padding-left: 30px;
+  width: 30px;
+}
