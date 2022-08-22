@@ -7,9 +7,18 @@ function DarkMode() {
 
   function onChangeDarkMode() {
     console.log(darkModeisOn);
+
+    const element = document.getElementsByTagName("BODY")[0];
+
     if (darkModeisOn === true) {
       setDarkMode(false);
-    } else setDarkMode(true);
+      // if dark mode is on, remove dark-mode class from body
+      element.classList.remove("dark-mode");
+    } else {
+      setDarkMode(true);
+      //  else add dark-mode class to body
+      element.classList.add("dark-mode");
+    }
   }
 
   return (

@@ -9,6 +9,10 @@
   box-shadow: 3px 5px 5px rgb(101 91 91 / 25%);
 }
 
+body.dark-mode .hashtag-name {
+  color: black;
+}
+
 /* .hashtag-name:hover {
   box-shadow: inset 100px 0 0 0 #54b3d6;
   color: white;

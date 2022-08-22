@@ -1,11 +1,30 @@
+/* variables default */
 body {
+  --main-bg-color: #fff7f9;
+  --main-text-color: black;
+}
+
+/* variables dark mode */
+body.dark-mode {
+  --main-bg-color: #2c2124;
+  --main-text-color: white;
+
+  color: var(--main-text-color);
+}
+
+body.dark-mode img {
+  filter: grayscale(50%);
+}
+
+body {
+  background-color: var(--main-bg-color);
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff0f3;
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
 }
 
@@ -19,17 +38,3 @@ body {
   font-family: FontNoot;
   src: url(Noot.otf);
 }
-
-/* variables default */
-body {
-  --main-bg-color: white;
-}
-
-/* variables dark mode */
-body.dark-mode {
-  --main-bg-color: black;
-}
-
-/* #root {
-  background-color: var(--main-bg-color);
-} */
