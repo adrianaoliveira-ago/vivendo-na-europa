@@ -13,6 +13,10 @@
   height: 430px;
 }
 
+body.dark-mode .Gyg-container {
+  background-color: #705d60e3;
+}
+
 .Gyg-title {
   text-align: center;
 }

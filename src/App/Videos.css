@@ -3,6 +3,11 @@
   width: 100%;
   margin-top: 25px;
 }
+
+body.dark-mode .videos-container {
+  background-color: #645252c9;
+}
+
 .videos-title {
   text-align: center;
 }

@@ -7,6 +7,11 @@
   background-color: #ffc9bc;
   padding-bottom: 20px;
 }
+
+body.dark-mode .map-container {
+  background-color: #705d60e3;
+}
+
 .map-country-ul {
   padding-left: 0px;
   font-weight: bolder;

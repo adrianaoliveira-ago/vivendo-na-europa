@@ -9,6 +9,10 @@
   position: relative;
 }
 
+body.dark-mode #page-footer {
+  background-color: #585057a1;
+}
+
 @media only screen and (max-width: 600px) {
   #page-footer {
     justify-content: flex-start;

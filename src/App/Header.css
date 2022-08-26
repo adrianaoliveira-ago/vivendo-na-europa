@@ -16,6 +16,18 @@
   -webkit-backface-visibility: hidden;
 }
 
+body.dark-mode #page-header {
+  background: #0f000c69;
+  /* background: rgba(139, 68, 167, 1); */
+  /* background-image: linear-gradient(
+    90deg,
+    rgba(139, 68, 167, 1) 0%,
+    rgba(155, 62, 143, 1) 16%,
+    rgba(131, 90, 48, 1) 70%,
+    rgba(120, 96, 20, 1) 100%
+  ); */
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -29,6 +41,20 @@
   padding-right: 30px;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+
+.nav-items > li > a {
+  text-decoration: none;
+  /* color: black; */
+  color: var(--main-text-color);
+}
+
+body.dark-mode .nav-items {
+  /* color: rgba(255, 215, 124, 1); */
 }
 
 .underline-on-hover:hover {

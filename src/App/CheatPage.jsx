@@ -26,6 +26,34 @@ const CheatPage = () => {
         ...
     )
   `;
+  const codeStringReactState = `
+  const MyComponent = () => {
+      // state has 3 parts: state name, update function and initial state
+      // const [myStateName, setMyStateFunction] = useState(myInitialState);
+      const [isLightOn, setlight] = useState(true); // initial state can be anything: string, boolean, array, number...
+
+      function onChangeBoolean() {
+        // setMyStateFunction(newValue) will change the value of myStateName to the new one
+        if (isBooleanOn === true) {
+          setlight(false);
+        } else setlight(true);
+      }
+    
+      return (
+        <div>
+          // show state value
+          <h1>{myStateName}</h1>
+          // use state as a boolean
+          <img
+            src={isBooleanOn ? LightBulbOn : LightBulbOff} // ternary operator => boolean ? if true : if false
+            onClick={onChangeLight}
+          />
+        </div>
+      );
+    }
+
+    `;
+
   const codeStringNewComponent = `
     // if you need CSS, 
     import "./MyComponent.css";
@@ -38,6 +66,7 @@ const CheatPage = () => {
 
     export default MyComponent;
     `;
+
   return (
     <div>
       <Header />
@@ -54,6 +83,11 @@ const CheatPage = () => {
           {codeStringNewComponent}
         </SyntaxHighlighter>
       </div>
+
+      <h1>How to create a state in react</h1>
+      <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
+        {codeStringReactState}
+      </SyntaxHighlighter>
       <Footer />
     </div>
   );

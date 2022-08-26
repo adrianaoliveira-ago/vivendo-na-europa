@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function DarkMode() {
   const [darkModeisOn, setDarkMode] = useState(false);
+  const [modeName, setModeName] = useState("Dark");
 
   function onChangeDarkMode() {
     console.log(darkModeisOn);
@@ -12,10 +13,12 @@ function DarkMode() {
 
     if (darkModeisOn === true) {
       setDarkMode(false);
+      setModeName("Dark");
       // if dark mode is on, remove dark-mode class from body
       element.classList.remove("dark-mode");
     } else {
       setDarkMode(true);
+      setModeName("Light");
       //  else add dark-mode class to body
       element.classList.add("dark-mode");
     }
@@ -27,6 +30,7 @@ function DarkMode() {
         src={darkModeisOn === true ? DarkModeOn : DarkModeOff} // ternary operator => boolean ? if true : if false
         onClick={onChangeDarkMode}
       />
+      <div className="dark-mode-name">{modeName}</div>
     </div>
   );
 }

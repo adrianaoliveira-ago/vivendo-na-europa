@@ -11,12 +11,3 @@
   flex: 1;
   padding-top: 140px;
 }
-
-.nav-items > li {
-  padding: 10px;
-}
-
-.nav-items > li > a {
-  text-decoration: none;
-  color: black;
-}

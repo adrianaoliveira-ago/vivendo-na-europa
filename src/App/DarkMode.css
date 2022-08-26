@@ -3,5 +3,10 @@
   height: 30px;
   justify-content: end;
   padding-left: 30px;
-  width: 30px;
+  /* width: 30px; */
+}
+
+.dark-mode-name {
+  margin-top: 4px;
+  margin-left: 5px;
 }
