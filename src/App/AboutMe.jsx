@@ -1,4 +1,4 @@
-import AboutMeImg from "./AboutMe.jpg";
+import AboutMeImg from "./AboutMe.png";
 import "./AboutMe.css";
 import SocialIcons from "./SocialIcons";
 

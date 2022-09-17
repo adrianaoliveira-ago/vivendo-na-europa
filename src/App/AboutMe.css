@@ -1,15 +1,16 @@
 .aboutme-img {
-  width: 50%;
+  width: 100%;
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .aboutme-container {
   display: flex;
-  padding-left: 300px;
-  padding-right: 300px;
+  /* padding-left: 300px;
+  padding-right: 300px; */
   padding-bottom: 20px;
   max-width: 800px;
+  justify-content: center;
 }
 .aboutme-text {
   padding-left: 50px;
