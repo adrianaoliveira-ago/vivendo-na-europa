@@ -15,5 +15,4 @@ const Hashtag = ({ name, color, link }) => {
     </div>
   );
 };
-
 export default Hashtag;

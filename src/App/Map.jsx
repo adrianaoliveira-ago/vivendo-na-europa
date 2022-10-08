@@ -23,6 +23,10 @@ function Map() {
     { name: "Greece", flag: "🇬🇷" },
     { name: "Belgium", flag: "🇧🇪" },
     { name: "Czech Republic", flag: "🇨🇿" },
+    {
+      name: "United Kingdom of Great Britain and Northern Ireland (the)",
+      flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    },
   ];
 
   const mapData = {
