@@ -4,8 +4,6 @@ import BlogPost from "./BlogPost";
 import "./BlogPage.css";
 import BlogPostGreece from "./BlogPostGreece.jpg";
 import BlogPostLondon from "./BlogPostLondon.jpg";
-// import BlogPostLondon2 from "./BlogPostLondon2.jpg";
-// import BlogPostGreece2 from "./BlogPostGreece2.jpg";
 import BlogPostBerlin from "./BlogPostBerlin.jpg";
 import BlogPostBerlin2 from "./BlogPostBerlin2.jpg";
 import Title from "./Title";
@@ -29,74 +27,54 @@ const BlogPage = () => {
 
   const galleryAthenas = [
     {
-      description: "Acropolle Athenas | Greece / Athens",
+      description: "Sounion | Greece ",
       year: 2022,
-      src: "./src/App/Gallery/photo2.jpg",
+      src: "/images/greece/photo7.jpg",
     },
     {
-      description: "Herod Atticus Odeon | Greece / Athens",
+      description: "Sounio-Temple of Poseidon | Greece-Sounion",
       year: 2022,
-      src: "./src/App/Gallery/photo6.jpg",
+      src: "/images/greece/photo8.jpg",
     },
     {
-      description: "Sounio | Greece / Athens",
+      description: "Library of Hadrian | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo7.jpg",
+      src: "/images/greece/photo9.jpg",
     },
     {
-      description: "Sounio-Temple of Poseidon | Greece / Athens",
+      description: "Areopagus | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo8.jpg",
+      src: "/images/greece/photo10.jpg",
     },
     {
-      description: "Library of Hadrian | Greece / Athens",
+      description: "Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo9.jpg",
+      src: "/images/greece/photo12.jpg",
     },
     {
-      description: "Areopagus | Greece / Athens",
+      description: "Herod Atticus Odeon | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo10.jpg",
+      src: "/images/greece/photo13.jpg",
     },
     {
-      description: "Acropolis of Athens | Greece / Athens",
+      description: "Herod Atticus Odeon | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo11.jpg",
+      src: "/images/greece/photo14.jpg",
     },
     {
-      description: "The flag of Greece | Greece / Athens",
+      description: "Arch of Hadrian | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo12.jpg",
+      src: "/images/greece/photo16.jpg",
     },
     {
-      description: "Herod Atticus Odeon| Greece / Athens",
+      description: "Panathenaic Stadium | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo13.jpg",
+      src: "/images/greece/photo17.jpg",
     },
     {
-      description: "Herod Atticus Odeon| Greece / Athens",
+      description: "Panathenaic Stadium | Greece-Athens",
       year: 2022,
-      src: "./src/App/Gallery/photo14.jpg",
-    },
-    {
-      description: "Panathenaic Stadium| Greece / Athens",
-      year: 2022,
-      src: "./src/App/Gallery/photo15.jpg",
-    },
-    {
-      description: "Arch of Hadrian| Greece / Athens",
-      year: 2022,
-      src: "./src/App/Gallery/photo16.jpg",
-    },
-    {
-      description: "Panathenaic Stadium| Greece / Athens",
-      year: 2022,
-      src: "./src/App/Gallery/photo17.jpg",
-    },
-    {
-      description: "Panathenaic Stadium| Greece / Athens",
-      year: 2022,
-      src: "./src/App/Gallery/photo18.jpg",
+      src: "/images/greece/photo18.jpg",
     },
   ];
 
@@ -115,7 +93,6 @@ const BlogPage = () => {
               "https://www.youtube.com/embed/gGT_X3bRk4c",
               "https://www.youtube.com/embed/vw1tTJViS3Y",
             ]}
-            // url="https://www.youtube.com/embed/gGT_X3bRk4c"
             image={BlogPostGreece}
             text1="The tour was great, the guide was friendly and we had a nice time!
           The tour was great, the guide was friendly and we had a nice time! The
