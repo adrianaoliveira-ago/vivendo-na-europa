@@ -10,6 +10,7 @@ import Title from "./Title";
 import Hero from "./Hero";
 import GalleryHome from "./Gallery/gallery.json";
 import NewGalleryHomePage from "./NewGalleryHomePage";
+import Snow from "./Snow";
 
 function Content() {
   return (
@@ -22,6 +23,7 @@ function Content() {
       <NewGalleryHomePage />
       <Videos />
       <Gyg />
+      <Snow />
     </div>
   );
 }
