@@ -27,6 +27,7 @@ function Map() {
       name: "United Kingdom of Great Britain and Northern Ireland (the)",
       flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
     },
+    { name: "Morocco", flag: "🇲🇦" },
   ];
 
   const mapData = {
@@ -50,6 +51,7 @@ function Map() {
     LU: 0,
     RO: 0,
     GR: 0,
+    MA: 0,
   };
 
   return (
