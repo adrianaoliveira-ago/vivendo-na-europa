@@ -1,65 +1,85 @@
 import "./Map.css";
 import { VectorMap } from "react-jvectormap";
+import { useEffect, useState } from "react";
 
 function Map() {
-  const arrayCountry = [
-    { name: "England", flag: "🇬🇧" },
-    { name: "Finland", flag: "🇫🇮" },
-    { name: "France", flag: "🇫🇷" },
-    { name: "Brazil", flag: "🇧🇷" },
-    { name: "Romania", flag: "🇷🇴" },
-    { name: "Germany", flag: "🇩🇪" },
-    { name: "Portugal", flag: "🇵🇹" },
-    { name: "Poland", flag: "🇵🇱" },
-    { name: "Holland", flag: "🇳🇱" },
-    { name: "Sweden", flag: "🇸🇪" },
-    { name: "denmark", flag: "🇩🇰" },
-    { name: "Hungary", flag: "🇭🇺" },
-    { name: "Italy", flag: "🇮🇹" },
-    { name: "Estonia", flag: "🇪🇪" },
-    { name: "Spain", flag: "🇪🇸" },
-    { name: "Qatar", flag: "🇶🇦" },
-    { name: "Luxemburg", flag: "🇱🇺" },
-    { name: "Greece", flag: "🇬🇷" },
-    { name: "Belgium", flag: "🇧🇪" },
-    { name: "Czech Republic", flag: "🇨🇿" },
-    {
-      name: "United Kingdom of Great Britain and Northern Ireland (the)",
-      flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-    },
-    { name: "Morocco", flag: "🇲🇦" },
-  ];
+  // const arrayCountry = [
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  // ];
 
   const mapData = {
-    BR: 0,
-    FI: 0,
-    FR: 0,
-    DE: 0,
-    PT: 0,
-    CZ: 0,
-    PL: 0,
-    NL: 0,
-    SE: 0,
-    DK: 0,
-    HU: 0,
-    IT: 0,
-    EE: 0,
-    ES: 0,
-    GB: 0,
-    QA: 0,
-    BE: 0,
-    LU: 0,
-    RO: 0,
-    GR: 0,
-    MA: 0,
+    // BR: 0,
+    // FI: 0,
+    // FR: 0,
+    // DE: 0,
+    // PT: 0,
+    // CZ: 0,
+    // PL: 0,
+    // NL: 0,
+    // SE: 0,
+    // DK: 0,
+    // HU: 0,
+    // IT: 0,
+    // EE: 0,
+    // ES: 0,
+    // GB: 0,
+    // QA: 0,
+    // BE: 0,
+    // LU: 0,
+    // RO: 0,
+    // GR: 0,
+    // MA: 0,
   };
+  const fetchUrl =
+    "https://cdn.contentful.com/spaces/6m6n676gq222/environments/master/entries?access_token=pzHjF6PJP8oDSJGbJtG4Z0ntu66Q5FoOoQq3NuyUqbQ&content_type=countriesVisited";
+
+  const [flagList, setFlagtList] = useState([]);
+
+  const fetchData = async () => {
+    console.log("fetching Data");
+    const response = await fetch(fetchUrl);
+    const responseJson = await response.json();
+
+    console.log(responseJson.items);
+    const newArray = responseJson.items.map((item) => {
+      return { flag: item.fields.flag };
+    });
+    console.log(newArray);
+    setFlagtList(newArray);
+  };
+
+  useEffect(() => {
+    console.log("component loaded");
+    fetchData();
+  }, []);
 
   return (
     <div className="map-container">
       <div className="map-country-list">
-        <h2>Countries that I visited: {arrayCountry.length}</h2>
+        <h2>Countries that I visited: {flagList.length}</h2>
         <div className="map-flags">
-          {arrayCountry.map((item) => {
+          {flagList.map((item) => {
             return item.flag;
           })}
         </div>
