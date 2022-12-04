@@ -5,8 +5,8 @@ import HeroPhoto3 from "./HeroPhoto3.jpg";
 
 import { useState, useEffect } from "react";
 
-const Hero = () => {
-  const arrayImage = [HeroPhoto, HeroPhoto2, HeroPhoto3];
+const Hero = ({ arrayImage }) => {
+  // const arrayImage = [HeroPhoto, HeroPhoto2, HeroPhoto3];
   const [count, setCount] = useState(0);
 
   // useEffect(() => {
@@ -20,7 +20,7 @@ const Hero = () => {
     // console.log(GalleryList);
     let newCount = count + 1;
 
-    if (newCount > 2) {
+    if (newCount >= arrayImage.length) {
       newCount = 0;
     }
     setCount(newCount);

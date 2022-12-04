@@ -27,6 +27,7 @@
   text-align: center;
   margin-left: 40px;
   margin-right: 40px;
+  white-space: pre-wrap;
 }
 
 .blog-page-hashtags {
