@@ -25,26 +25,26 @@ import Grid32 from "./GridGalleryPhotos/grid32.jpg";
 import Grid31 from "./GridGalleryPhotos/grid31.jpg";
 import "./NewGalleryHomePage.css";
 
-const NewGalleryHomePage = () => {
-  const arrayGrid1 = [
-    Grid1,
-    Grid18,
-    Grid31,
-    Grid14,
-    Grid5,
-    Grid6,
-    Grid32,
-    Grid8,
-    Grid27,
-    Grid11,
-  ];
+const NewGalleryHomePage = ({ photosGrid }) => {
+  // const arrayGrid1 = [
+  //   // Grid1,
+  //   // Grid18,
+  //   // Grid31,
+  //   // Grid14,
+  //   // Grid5,
+  //   // Grid6,
+  //   // Grid32,
+  //   // Grid8,
+  //   // Grid27,
+  //   // Grid11,
+  // ];
 
   //   const arrayGrid3 = [Grid11, Grid12, Grid14, Grid15, Grid16];
   //   const arrayGrid4 = [Grid17, Grid18, Grid19, Grid20, Grid21];
   //   const arrayGrid5 = [Grid22, Grid23, Grid24, Grid25, Grid26];
   return (
     <div className="gallery">
-      {arrayGrid1.map((photo) => {
+      {photosGrid.map((photo) => {
         return <img src={photo} />;
       })}
     </div>

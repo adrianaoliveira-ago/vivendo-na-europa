@@ -25,7 +25,7 @@ function Gyg() {
     let newCount = count + 1;
     console.log("Cliquei no botão direito", newCount);
 
-    if (newCount > 1) {
+    if (newCount > 2) {
       newCount = 0;
     }
 

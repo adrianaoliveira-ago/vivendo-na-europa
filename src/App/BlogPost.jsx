@@ -1,7 +1,7 @@
 import BlogPageVideos from "./BlogPageVideos";
 import Hashtag from "./Hashtag";
 import ArrowDown from "./Icons/arrow-down.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Gallery from "./Gallery";
 
 const BlogPost = ({
