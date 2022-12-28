@@ -1,8 +1,12 @@
+import ReactMarkdown from "react-markdown";
+import ReactDom from "react-dom";
+
 import BlogPageVideos from "./BlogPageVideos";
 import Hashtag from "./Hashtag";
 import ArrowDown from "./Icons/arrow-down.svg";
 import { useState, useEffect } from "react";
 import Gallery from "./Gallery";
+import IconSplitter from "./IconSplitter";
 
 const BlogPost = ({
   subtitle,
@@ -60,7 +64,12 @@ const BlogPost = ({
 
         <img src={image} className="BlogPage-img" onClick={onArrowClick} />
 
-        {estaAberto && <p className="BlogPage-Text-1">{text1}</p>}
+        {estaAberto && (
+          <p className="BlogPage-Text-1">
+            {" "}
+            <ReactMarkdown>{text1}</ReactMarkdown>;
+          </p>
+        )}
 
         {estaAberto && galleryList.length > 0 && (
           <Gallery list={galleryList} title={"Gallery"}></Gallery>
@@ -73,6 +82,7 @@ const BlogPost = ({
       {urlList.length > 0 && estaAberto && (
         <BlogPageVideos list={urlList}></BlogPageVideos>
       )}
+      {estaAberto && <IconSplitter />}
     </div>
   );
 };
