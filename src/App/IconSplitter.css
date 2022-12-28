@@ -1,0 +1,9 @@
+.icon-splitter-travel {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-splitter-image {
+  width: 300px;
+  margin: 40px;
+}
