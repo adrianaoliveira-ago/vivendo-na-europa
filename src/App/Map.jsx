@@ -3,54 +3,30 @@ import { VectorMap } from "react-jvectormap";
 import { useEffect, useState } from "react";
 
 function Map() {
-  // const arrayCountry = [
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  // ];
+  // const mapData = {
+  //   BR: 0,
+  //   FI: 0,
+  //   FR: 0,
+  //   DE: 0,
+  //   PT: 0,
+  //   CZ: 0,
+  //   PL: 0,
+  //   NL: 0,
+  //   SE: 0,
+  //   DK: 0,
+  //   HU: 0,
+  //   IT: 0,
+  //   EE: 0,
+  //   ES: 0,
+  //   GB: 0,
+  //   QA: 0,
+  //   BE: 0,
+  //   LU: 0,
+  //   RO: 0,
+  //   GR: 0,
+  //   MA: 0,
+  // };
 
-  const mapData = {
-    // BR: 0,
-    // FI: 0,
-    // FR: 0,
-    // DE: 0,
-    // PT: 0,
-    // CZ: 0,
-    // PL: 0,
-    // NL: 0,
-    // SE: 0,
-    // DK: 0,
-    // HU: 0,
-    // IT: 0,
-    // EE: 0,
-    // ES: 0,
-    // GB: 0,
-    // QA: 0,
-    // BE: 0,
-    // LU: 0,
-    // RO: 0,
-    // GR: 0,
-    // MA: 0,
-  };
   const fetchUrl =
     "https://cdn.contentful.com/spaces/6m6n676gq222/environments/master/entries?access_token=pzHjF6PJP8oDSJGbJtG4Z0ntu66Q5FoOoQq3NuyUqbQ&content_type=countriesVisited";
 
@@ -62,10 +38,16 @@ function Map() {
     const responseJson = await response.json();
 
     console.log(responseJson.items);
+
     const newArray = responseJson.items.map((item) => {
-      return { flag: item.fields.flag };
+      return {
+        flag: item.fields.flag,
+        code: item.fields.code,
+        date: item.fields.date,
+        name: item.fields.name,
+      };
     });
-    console.log(newArray);
+    console.log("flags array", newArray);
     setFlagtList(newArray);
   };
 
@@ -73,6 +55,24 @@ function Map() {
     console.log("component loaded");
     fetchData();
   }, []);
+
+  const generateMapData = () => {
+    console.log("generateMapData");
+
+    const mapData = {};
+
+    flagList.forEach((item) => {
+      mapData[item.code] = 0; // mapData.BR = 0
+    });
+
+    console.log(mapData);
+
+    return mapData;
+  };
+
+  const getFillColor = () => {
+    return "#e4e4e4";
+  };
 
   return (
     <div className="map-container">
@@ -97,7 +97,7 @@ function Map() {
             containerClassName="map"
             regionStyle={{
               initial: {
-                fill: "#e4e4e4",
+                fill: getFillColor(),
                 "fill-opacity": 0.9,
                 stroke: "none",
                 "stroke-width": 0,
@@ -108,7 +108,7 @@ function Map() {
                 cursor: "pointer",
               },
               selected: {
-                fill: "#e4e4e4", //color for the clicked country
+                fill: getFillColor(), //color for the clicked country
               },
               selectedHover: {},
             }}
@@ -116,7 +116,7 @@ function Map() {
             series={{
               regions: [
                 {
-                  values: mapData, //this is your data
+                  values: generateMapData(), //this is your data
                   scale: ["#ED66B3"], //your color game's here
                   normalizeFunction: "polynomial",
                 },
