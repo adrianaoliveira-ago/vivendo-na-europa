@@ -1,0 +1,82 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+}
+.box--div {
+  position: relative;
+}
+.box--first {
+  height: 200px;
+  background-color: white;
+  border: 3px solid #d0c8c8;
+  margin-top: 18px;
+}
+
+.box--second {
+  height: 200px;
+  background-color: #ffebbe;
+  border: 3px solid #f9b916;
+  border-top: 1px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: karla;
+}
+
+/* .box--div--img {
+  position: absolute;
+  display: flex;
+  width: 330px;
+  justify-content: flex-end;
+} */
+
+.box--img {
+  position: absolute;
+  right: 0px;
+}
+
+.box--title {
+  font-size: 16px;
+}
+
+.box--comments {
+  font-family: Karla;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 19px;
+  margin: 10px;
+}
+
+.box--cardBox {
+  width: 142px;
+  height: 25px;
+  background-color: #f9b916;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.box--card--name {
+  font-family: "Karla";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.box--div-cadrBox {
+  width: 330px;
+  display: flex;
+  justify-content: center;
+}
+
+.box--href {
+  display: flex;
+  justify-content: center;
+}
+
+.box--img2 {
+  margin-top: 20px;
+}

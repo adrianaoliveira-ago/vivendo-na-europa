@@ -12,6 +12,7 @@ import GridGallery from "./App/GridGallery";
 import LightBulb from "./App/LightBulb";
 import CounterPage from "./App/CounterPage";
 import ThermostatPage from "./App/ThermostatPage";
+import AffiliateLinks from "./App/AffiliateLinks";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Route path="lightBulb" element={<LightBulb />} />
         <Route path="counter" element={<CounterPage />} />
         <Route path="thermostat" element={<ThermostatPage />} />
+        <Route path="AffiliateLinks" element={<AffiliateLinks />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
