@@ -1,7 +1,7 @@
 // import Header from "./Header";
 // import Footer from "./Footer";
 import "./AffiliateCard.css";
-import OrangeTag from "./affiliatelinkTag.svg";
+import OrangeTag from "./affiliateLinkTag.svg";
 import PinkTag from "./IconPinkTag.svg";
 import BlueTag from "./IconBlueTag.svg";
 import DarkOrangeTag from "./IconDarkOrangeTag.svg";
