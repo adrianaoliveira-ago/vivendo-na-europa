@@ -11,17 +11,20 @@
   background-color: white;
   border: 3px solid #d0c8c8;
   margin-top: 18px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .box--second {
   height: 200px;
-  background-color: #ffebbe;
-  border: 3px solid #f9b916;
+  /* background-color: #ffebbe; */
+  /* border: 3px solid #f9b916; */
   border-top: 1px;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-family: karla;
+  border-top: none !important;
+  border-radius: 0px 0px 10px 10px;
 }
 
 /* .box--div--img {
@@ -52,11 +55,11 @@
 .box--cardBox {
   width: 142px;
   height: 25px;
-  background-color: #f9b916;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  margin-top: 65px;
 }
 
 .box--card--name {
