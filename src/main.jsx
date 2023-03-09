@@ -27,7 +27,7 @@ ReactDOM.render(
         <Route path="lightBulb" element={<LightBulb />} />
         <Route path="counter" element={<CounterPage />} />
         <Route path="thermostat" element={<ThermostatPage />} />
-        <Route path="AffiliateLinks" element={<AffiliateLinks />} />
+        <Route path="affiliate-links" element={<AffiliateLinks />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
