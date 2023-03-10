@@ -9,14 +9,14 @@ import Header from "./Header";
 
 const AffiliateLinks = () => {
   return (
-    <div>
-      <div className="header">
+    <div className="affiliate-div">
+      {/* <div className="header">
         <Header></Header>
-      </div>
+      </div> */}
       <Title name="Affiliate Links" />
       <div className="affiliate">
         <AffiliateCard
-          tagIcon="orange"
+          tagIcon="purple"
           title="Flight Knight Lightweight 4 Wheel"
           comments="“Perfect to travel with restriction size. I never had problem with this luggage.”"
           boxColor="#C976EE"

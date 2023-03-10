@@ -13,6 +13,7 @@ import Hero from "./Hero";
 // import GalleryHome from "./Gallery/gallery.json";
 import NewGalleryHomePage from "./NewGalleryHomePage";
 import Snow from "./Snow";
+import AffiliateLinks from "./AffiliateLinks";
 
 function Content() {
   const fetchUrl =
@@ -52,6 +53,7 @@ function Content() {
       <NewGalleryHomePage photosGrid={gridList} />
       <Videos />
       <Gyg />
+      <AffiliateLinks />
       <Snow />
     </div>
   );

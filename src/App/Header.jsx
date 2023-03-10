@@ -23,6 +23,10 @@ function Header() {
       name: "Blog",
       link: "/blog",
     },
+    {
+      name: "Affiliate Links",
+      link: "https://vivendonaeuropa.netlify.app/affiliate-links",
+    },
   ];
 
   return (

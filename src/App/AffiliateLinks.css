@@ -1,13 +1,26 @@
 .affiliate {
   display: grid;
-  grid-template-columns: repeat(5, 330px);
+  /* grid-template-columns: repeat(5, 330px); */
+  grid-template-columns: repeat(auto-fill, 330px);
   grid-template-rows: 1fr;
   grid-column-gap: 38px;
   grid-row-gap: 1px;
   justify-items: center;
   justify-content: center;
+  /* padding: 0 100px; */
+  /* display: flex; */
 }
 
 .header {
   padding-bottom: 180px;
+}
+
+.affiliate-div {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .affiliate {
+    padding: 0 100px;
+  }
 }
