@@ -1,5 +1,3 @@
-// import Header from "./Header";
-// import Footer from "./Footer";
 import "./AffiliateCard.css";
 import OrangeTag from "./affiliateLinkTag.svg";
 import PinkTag from "./IconPinkTag.svg";
@@ -34,7 +32,6 @@ const AffiliateCard = ({
   };
   return (
     <div className="box">
-      {/* <Header /> */}
       <div className="box--div">
         <img src={getTag()} className="box--img" />
 
@@ -82,7 +79,6 @@ const AffiliateCard = ({
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

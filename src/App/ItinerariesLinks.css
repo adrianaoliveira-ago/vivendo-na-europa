@@ -1,0 +1,16 @@
+.itineraries-links {
+  display: flex;
+  justify-content: center;
+}
+
+.itineraries-header {
+  position: relative;
+}
+
+.itineraries-title {
+  position: absolute;
+  margin-top: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

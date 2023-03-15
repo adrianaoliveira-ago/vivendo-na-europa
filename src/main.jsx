@@ -13,6 +13,7 @@ import LightBulb from "./App/LightBulb";
 import CounterPage from "./App/CounterPage";
 import ThermostatPage from "./App/ThermostatPage";
 import AffiliateLinks from "./App/AffiliateLinks";
+import ItineraryLinks from "./App/ItineraryLinks";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="counter" element={<CounterPage />} />
         <Route path="thermostat" element={<ThermostatPage />} />
         <Route path="affiliate-links" element={<AffiliateLinks />} />
+        <Route path="itinerary-links" element={<ItineraryLinks />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
