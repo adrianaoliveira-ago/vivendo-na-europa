@@ -12,6 +12,9 @@
   border: 3px solid #d0c8c8;
   margin-top: 18px;
   border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box--second {
@@ -59,7 +62,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  margin-top: 65px;
+  /* margin-top: 65px; */
 }
 
 .box--card--name {
