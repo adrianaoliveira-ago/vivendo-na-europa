@@ -76,6 +76,9 @@
   width: 330px;
   display: flex;
   justify-content: center;
+  height: 203px;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .box--href {
