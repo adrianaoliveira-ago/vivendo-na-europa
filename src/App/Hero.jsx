@@ -1,7 +1,4 @@
 import "./Hero.css";
-import HeroPhoto from "./HeroPhoto.jpg";
-import HeroPhoto2 from "./HeroPhoto2.jpg";
-import HeroPhoto3 from "./HeroPhoto3.jpg";
 
 import { useState, useEffect } from "react";
 

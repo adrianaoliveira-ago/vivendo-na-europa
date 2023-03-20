@@ -1,4 +1,4 @@
-import logoImg from "./logo.png";
+import logoImg from "./Icons/logo.png";
 import "./Header.css";
 import DarkMode from "./DarkMode";
 import "./DarkMode.css";

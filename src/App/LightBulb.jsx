@@ -1,5 +1,5 @@
-import LightBulbOn from "./LightBulbOn.jpg";
-import LightBulbOff from "./LightBulbOff.jpg";
+import LightBulbOn from "./Icons/LightBulbOn.jpg";
+import LightBulbOff from "./Icons/LightBulbOff.jpg";
 import { useState } from "react";
 
 function LightBulb() {

@@ -1,22 +1,40 @@
 import "./AffiliateCard.css";
-import OrangeTag from "./affiliateLinkTag.svg";
-import PinkTag from "./IconPinkTag.svg";
-import BlueTag from "./IconBlueTag.svg";
-import DarkOrangeTag from "./IconDarkOrangeTag.svg";
-import PurpleTag from "./IconPurpleTag.svg";
+import OrangeTag from "./Icons/affiliateLinkTag.svg";
+import PinkTag from "./Icons/IconPinkTag.svg";
+import BlueTag from "./Icons/IconBlueTag.svg";
+import DarkOrangeTag from "./Icons/IconDarkOrangeTag.svg";
+import PurpleTag from "./Icons/IconPurpleTag.svg";
 
 const AffiliateCard = ({
   tagIcon,
   title,
   comments,
-  cardBox,
   cardBoxName,
-  boxColor,
-  borderColor,
   href,
   imgSrc,
   imgSrcTracking,
+  cardBox,
+  boxColor,
+  borderColor,
+  theme, // yellow , pink
 }) => {
+  // const themes = {
+  //   'yellow': {
+  //     cardBox: "",
+  //     boxColor: "",
+  //     borderColor: ""
+  //   },
+  //   'pink': {
+  //     cardBox: "",
+  //     boxColor: "",
+  //     borderColor: ""
+  //   }
+  // }
+
+  // const getTheme = () => {
+  //   return themes[theme]
+  // }
+
   const getTag = () => {
     if (tagIcon === "orange") {
       return OrangeTag;
@@ -53,7 +71,7 @@ const AffiliateCard = ({
       <div
         className="box--second"
         style={{
-          backgroundColor: boxColor,
+          backgroundColor: boxColor, // getTheme().boxColor
           border: borderColor,
         }}
       >

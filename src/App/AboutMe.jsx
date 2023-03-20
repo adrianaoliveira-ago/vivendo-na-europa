@@ -1,11 +1,13 @@
-import AboutMeImg from "./AboutMe.png";
 import "./AboutMe.css";
 import SocialIcons from "./SocialIcons";
 
 function AboutMe() {
   return (
     <div className="aboutme-container">
-      <img src={AboutMeImg} className="aboutme-img" />
+      <img
+        src="https://ik.imagekit.io/0590enjap/Vivendo_na_Europa/AboutMe.png" // ?tr=h-450,w-800
+        className="aboutme-img"
+      />
       <div className="aboutme-text">
         <h2>About Me </h2>
 

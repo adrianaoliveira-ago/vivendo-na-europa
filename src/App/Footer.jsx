@@ -2,7 +2,7 @@ import coffeeImg from "./Footer/coffee-image.png";
 import Imageok from "./Footer/image-ok.png";
 import { useState } from "react";
 import "./Footer.css";
-import ArrowUp from "./ArrowUp.png";
+import ArrowUp from "./Icons/ArrowUp.png";
 
 function Footer() {
   const arrayImage = [coffeeImg, Imageok];

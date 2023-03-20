@@ -53,7 +53,8 @@ function Content() {
       <NewGalleryHomePage photosGrid={gridList} />
       <Videos />
       <Gyg />
-      <AffiliateLinks />
+
+      <AffiliateLinks hideHeader={true} />
       <Snow />
     </div>
   );

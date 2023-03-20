@@ -1,4 +1,4 @@
-import IconSplitterTravel from "./iconSplitterTravel.png";
+import IconSplitterTravel from "./Icons/iconSplitterTravel.png";
 import "./IconSplitter.css";
 
 function IconSplitter() {

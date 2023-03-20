@@ -1,7 +1,4 @@
-// import ThermostatImag from "./ThermostatImag.jpg";
 import "./ThermostatPage.css";
-import ThermostatArrowDown from "./ThermostatArrowDown.png";
-import ThermostatArrowUp from "./ThermostatArrowUp.png";
 import { useState } from "react";
 
 const ThermostatPage = () => {
@@ -26,12 +23,11 @@ const ThermostatPage = () => {
 
         <div className="Thermostat-temperature">{counter}</div>
       </div>
-      {/* <img scr={ThermostatImag}></img> */}
+
       <div className="Thermostat-Arrow">
         <div className="Thermostat-Arrow-Up" onClick={counterUp}></div>
-        {/* <img scr={ThermostatArrowUp}></img> */}
+
         <div className="Thermostat-Arrow-Down" onClick={counterDown}></div>
-        <div>{/* <img scr={ThermostatArrowDown}></img> */}</div>
       </div>
     </div>
   );
