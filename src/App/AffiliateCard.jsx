@@ -8,12 +8,12 @@ import PurpleTag from "./Icons/IconPurpleTag.svg";
 const AffiliateCard = ({
   tagIcon,
   title,
-  comments,
-  cardBoxName,
+  comment,
+  tagName,
   href,
   imgSrc,
   imgSrcTracking,
-  cardBox,
+  tagColor,
   boxColor,
   borderColor,
   theme, // yellow , pink
@@ -76,15 +76,15 @@ const AffiliateCard = ({
         }}
       >
         <h1 className="box--title">{title}</h1>
-        <h4 className="box--comments">{comments}</h4>
+        <h4 className="box--comments">{comment}</h4>
         <div className="box--div-cadrBox">
           <div
             className="box--cardBox"
             style={{
-              backgroundColor: cardBox,
+              backgroundColor: tagColor,
             }}
           >
-            <h1 className="box--card--name">{cardBoxName}</h1>
+            <h1 className="box--card--name">{tagName}</h1>
           </div>
         </div>
       </div>

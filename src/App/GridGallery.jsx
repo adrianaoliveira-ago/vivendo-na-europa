@@ -25,16 +25,6 @@ import Grid23 from "./GridGalleryPhotos/grid23.jpg";
 import Grid24 from "./GridGalleryPhotos/grid24.jpg";
 import Grid25 from "./GridGalleryPhotos/grid25.jpg";
 import Grid26 from "./GridGalleryPhotos/grid26.jpg";
-import Grid27 from "./GridGalleryPhotos/grid27.jpg";
-import Grid28 from "./GridGalleryPhotos/grid28.jpg";
-import Grid29 from "./GridGalleryPhotos/grid29.jpg";
-import Grid30 from "./GridGalleryPhotos/grid30.jpg";
-import Grid31 from "./GridGalleryPhotos/grid31.jpg";
-import Grid32 from "./GridGalleryPhotos/grid32.jpg";
-import Grid33 from "./GridGalleryPhotos/grid33.jpg";
-import Grid34 from "./GridGalleryPhotos/grid34.jpg";
-import Grid35 from "./GridGalleryPhotos/grid35.jpg";
-import Grid36 from "./GridGalleryPhotos/grid36.jpg";
 
 import "./GridGallery.css";
 
