@@ -2,6 +2,7 @@ import "./styles.css";
 import ArrowLeft from "../Icons/arrow-left.svg";
 import ArrowRight from "../Icons/arrow-right.svg";
 import { useState } from "react";
+import Title from "../Title";
 
 function Gallery({ list, title }) {
   const [selectedImage, setSelectedImage] = useState(list[0]);
@@ -37,8 +38,8 @@ function Gallery({ list, title }) {
 
   return (
     <div className="gallery-container">
-      <h2 className="gallery-title">{title}</h2>
-
+      <Title name={title}></Title>
+      {/* <h2 className="gallery-title">{title}</h2> */}
       <div className="gallery-photo-arrow">
         <img
           src={ArrowLeft}
