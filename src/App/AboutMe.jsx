@@ -11,7 +11,7 @@ function AboutMe() {
       <div className="aboutme-text">
         <h2>About Me </h2>
 
-        <p>
+        <p className="aboutme_paragraph">
           Hey, I'm Adriana. At the moment I'm living in Berlin/Germany. I would
           like to share with you my experience traveling throughout the world.
           <br />

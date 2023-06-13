@@ -9,6 +9,7 @@ const BlogPageVideos = ({ list }) => {
         {list.map((item) => {
           return (
             <iframe
+              className="blog-page-size-video"
               width="560"
               height="315"
               src={item}

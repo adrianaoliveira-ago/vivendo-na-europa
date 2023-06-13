@@ -46,5 +46,6 @@ body.dark-mode .map-container {
 @media only screen and (max-width: 600px) {
   .map-flags {
     font-size: 30px;
+    padding: 30px;
   }
 }

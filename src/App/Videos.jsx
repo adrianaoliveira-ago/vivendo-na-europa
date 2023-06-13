@@ -45,6 +45,7 @@ function Videos() {
         {videoList.map((item) => {
           return (
             <iframe
+              className="videos_iframe"
               width="545"
               height="309"
               src={item.url}

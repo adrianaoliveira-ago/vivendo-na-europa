@@ -51,15 +51,26 @@ body.dark-mode .Gyg-container {
 
   .Gyg-container {
     width: 300px;
-    margin-left: 0px;
-    margin-right: 0px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
     box-shadow: none;
     background-color: transparent;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .arrow-left,
   .arrow-right {
     min-width: 18px;
     width: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Gyg-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: transparent;
+    box-shadow: none;
   }
 }

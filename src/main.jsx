@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { ChakraProvider } from "@chakra-ui/react";
+
 import "./index.css";
 import App from "./App/App";
 import BlogPage from "./App/BlogPage";
@@ -17,21 +19,23 @@ import ItineraryLinks from "./App/ItineraryLinks";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="blog" element={<BlogPage />} />
-        <Route path="travel" element={<TravelPage />} />
-        <Route path="snow" element={<SnowPage />} />
-        <Route path="cheat" element={<CheatPage />} />
-        <Route path="gridGallery" element={<GridGallery />} />
-        <Route path="lightBulb" element={<LightBulb />} />
-        <Route path="counter" element={<CounterPage />} />
-        <Route path="thermostat" element={<ThermostatPage />} />
-        <Route path="affiliate-links" element={<AffiliateLinks />} />
-        <Route path="itinerary-links" element={<ItineraryLinks />} />
-      </Routes>
-    </BrowserRouter>
+    <ChakraProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="travel" element={<TravelPage />} />
+          <Route path="snow" element={<SnowPage />} />
+          <Route path="cheat" element={<CheatPage />} />
+          <Route path="gridGallery" element={<GridGallery />} />
+          <Route path="lightBulb" element={<LightBulb />} />
+          <Route path="counter" element={<CounterPage />} />
+          <Route path="thermostat" element={<ThermostatPage />} />
+          <Route path="affiliate-links" element={<AffiliateLinks />} />
+          <Route path="itinerary-links" element={<ItineraryLinks />} />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
