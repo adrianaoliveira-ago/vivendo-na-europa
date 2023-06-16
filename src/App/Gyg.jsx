@@ -37,13 +37,12 @@ function Gyg() {
   return (
     <div>
       <Title name="My Favorite Tours" />
-      {/* <h2 className="Gyg-title">My favorite Tours</h2> */}
+
       <div className="Gyg-container-arrow">
         <div className="Gyg-gallery-arrow">
           <img
             className="arrow-left"
             src={ArrowLeft}
-            // className="gallery-arrowleft"
             onClick={onArrowLeftClick}
           />
         </div>
@@ -76,7 +75,6 @@ function Gyg() {
           <img
             className="arrow-right"
             src={ArrowRight}
-            // className="gallery-arrowright"
             onClick={onArrowRightClick}
           />
         </div>
