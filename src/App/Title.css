@@ -34,6 +34,8 @@ body.dark-mode .title-text {
   -webkit-text-stroke: 2px #0a0a06 !important;
   font-size: 50px;
   text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 @media only screen and (max-width: 600px) {

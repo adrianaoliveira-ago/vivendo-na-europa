@@ -1,7 +1,8 @@
 .videos-container {
   background-color: #ffc8d5;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 body.dark-mode .videos-container {

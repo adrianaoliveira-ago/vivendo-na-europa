@@ -11,6 +11,7 @@
   width: 700px;
   box-shadow: 10px 5px 5px rgba(101, 91, 91, 0.346);
   height: 430px;
+  margin-bottom: 60px;
 }
 
 body.dark-mode .Gyg-container {

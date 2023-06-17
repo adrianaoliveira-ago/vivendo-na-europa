@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import "./Videos.css";
+import Title from "./Title";
 
 function Videos() {
   const fetchUrl =
@@ -39,7 +40,8 @@ function Videos() {
   // ];
   return (
     <div className="videos-container">
-      <h2 className="videos-title">Travel videos you might like</h2>
+      <Title name="Travel videos you might like" />
+      {/* <h2 className="videos-title">Travel videos you might like</h2> */}
 
       <div className="videos-videos">
         {videoList.map((item) => {
