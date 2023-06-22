@@ -17,7 +17,8 @@ body.dark-mode img {
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color) !important;
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png") !important;
 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -25,7 +26,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
 }
 
 #root {
@@ -37,4 +37,12 @@ body {
 @font-face {
   font-family: FontNoot;
   src: url(Noot.otf);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

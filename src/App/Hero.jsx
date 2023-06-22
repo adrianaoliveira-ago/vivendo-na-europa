@@ -1,6 +1,7 @@
 import "./Hero.css";
 
 import { useState, useEffect } from "react";
+import Weather from "./Weather";
 
 const Hero = ({ arrayImage }) => {
   // const arrayImage = [HeroPhoto, HeroPhoto2, HeroPhoto3];
@@ -30,13 +31,16 @@ const Hero = ({ arrayImage }) => {
         <h4 className="hero-text-style">VIVENDO NA EUROPA</h4>
         <h4 className="hero-text-style-2">por Adriana Gonzaga</h4>
       </div> */}
+      <div className="hero-weather">
+        <Weather />
 
-      <img
-        key={count}
-        className="hero-img"
-        src={arrayImage[count]}
-        onClick={onChangeImage}
-      />
+        <img
+          key={count}
+          className="hero-img"
+          src={arrayImage[count]}
+          onClick={onChangeImage}
+        />
+      </div>
     </div>
   );
 };

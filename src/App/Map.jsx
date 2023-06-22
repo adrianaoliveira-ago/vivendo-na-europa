@@ -77,7 +77,9 @@ function Map() {
   return (
     <div className="map-container">
       <div className="map-country-list">
-        <h2>Countries that I visited: {flagList.length}</h2>
+        <h2 className="map-count-countries">
+          Countries that I visited: {flagList.length}
+        </h2>
         <div className="map-flags">
           {flagList.map((item) => {
             return item.flag;

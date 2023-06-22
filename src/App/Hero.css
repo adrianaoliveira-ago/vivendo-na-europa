@@ -40,9 +40,17 @@
   -webkit-text-stroke: 0.1px #a65e5e;
 }
 
+.hero-weather {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+}
+
 @media only screen and (max-width: 600px) {
   .hero-img,
   .hero-background-color {
     height: 300px;
+    /* width: 425px; */
+    padding-bottom: 5px;
   }
 }

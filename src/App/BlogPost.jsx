@@ -58,10 +58,10 @@ const BlogPost = ({
           </div>
         </div>
 
-        <img src={image} className="BlogPage-img" onClick={onArrowClick} />
+        <img src={image} className="blogPage-img" onClick={onArrowClick} />
 
         {estaAberto && (
-          <p className="BlogPage-Text-1">
+          <p className="blogPage-Text-1">
             {" "}
             <ReactMarkdown>{text1}</ReactMarkdown>;
           </p>
@@ -73,7 +73,7 @@ const BlogPost = ({
 
         {/* {estaAberto && <img src={image2} className="BlogPage-img2" />} */}
 
-        {estaAberto && <p className="BlogPage-Text-Maceio">{text2}</p>}
+        {estaAberto && <p className="blogPage-Text-Maceio">{text2}</p>}
       </div>
       {urlList.length > 0 && estaAberto && (
         <BlogPageVideos list={urlList}></BlogPageVideos>

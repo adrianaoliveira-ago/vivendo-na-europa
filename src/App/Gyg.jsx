@@ -3,6 +3,7 @@ import ArrowRight from "./Icons/arrow-right.svg";
 import TourJson from "./gyg.json";
 import { useState } from "react";
 import "./Gyg.css";
+import Title from "./Title";
 
 function Gyg() {
   const [selectedTour, setSelectedTour] = useState(TourJson.tour[0]);
@@ -35,13 +36,13 @@ function Gyg() {
 
   return (
     <div>
-      <h2 className="Gyg-title">My favorite Tours</h2>
+      <Title name="My Favorite Tours" />
+
       <div className="Gyg-container-arrow">
         <div className="Gyg-gallery-arrow">
           <img
             className="arrow-left"
             src={ArrowLeft}
-            // className="gallery-arrowleft"
             onClick={onArrowLeftClick}
           />
         </div>
@@ -74,7 +75,6 @@ function Gyg() {
           <img
             className="arrow-right"
             src={ArrowRight}
-            // className="gallery-arrowright"
             onClick={onArrowRightClick}
           />
         </div>

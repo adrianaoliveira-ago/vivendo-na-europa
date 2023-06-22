@@ -41,10 +41,10 @@ const BlogPage = () => {
   }, []);
 
   return (
-    <div className="Blog-page-padding">
+    <div className="blog-page-padding">
       <Header></Header>
       <Snow />
-      <div className="Blog-page-padding2">
+      <div className="blog-page-padding2">
         <Title name="Vivendo na Europa Travel Blog"></Title>
         <SocialIcons />
         <div className="blog-post-padding">
