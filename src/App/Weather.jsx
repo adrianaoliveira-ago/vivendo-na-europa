@@ -6,7 +6,7 @@ import IconWeather1 from "./Icons/IconWeather1.png";
 
 const Weather = () => {
   const fetchUrl =
-    "http://api.weatherapi.com/v1/forecast.json?key=5a46020b78114e09a36164610231901&q=Berlin&days=0&aqi=no&alerts=no";
+    "https://api.weatherapi.com/v1/forecast.json?key=5a46020b78114e09a36164610231901&q=Berlin&days=0&aqi=no&alerts=no";
 
   const [currentTemp, setCurrentTemp] = useState("");
   const [localData, setLocalData] = useState("");
