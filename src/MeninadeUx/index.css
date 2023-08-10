@@ -1,0 +1,58 @@
+.header {
+  background-color: #ffc8dd;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-photo {
+  width: 20em;
+  position: absolute;
+}
+
+.header-wave {
+}
+
+.header-div-photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-about-me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  margin: 4em;
+  font-family: cursive;
+}
+
+.body-photo {
+  height: 40em;
+}
+.body-text {
+  text-align: left;
+  font-family: cursive;
+}
+
+.body-title-job {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.body-div-wave {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  overflow: hidden;
+}
