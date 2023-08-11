@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import "./index.css";
+
 import App from "./App/App";
 import BlogPage from "./App/BlogPage";
 import TravelPage from "./App/TravelPage";

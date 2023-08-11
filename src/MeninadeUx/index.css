@@ -1,52 +1,113 @@
-.header {
+:root {
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(201, 118, 238, 1) 0%,
+    rgba(241, 117, 225, 1) 16%,
+    rgba(246, 174, 101, 1) 70%,
+    rgba(255, 215, 124, 1) 100%
+  );
+  --section-padding: 0 30em;
+}
+
+.meninadeux-header {
   background-color: #ffc8dd;
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+}
+
+.meninadeux-ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5em;
+  list-style: none;
+  font-family: Caveat Brush;
+  font-weight: bolder;
+  font-size: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #ffdab9;
+  max-height: 72px;
+}
+
+.meninadeux-ul li:hover {
+  border-bottom: 3px solid white;
+  background-image: var(--bg-gradient);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.meninadeux-header-about-me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  padding: var(--section-padding);
 }
 
 .header-photo {
-  width: 20em;
-  position: absolute;
+  width: 25em;
+  /* position: absolute; */
+  /* margin-right: 4em; */
 }
 
-.header-wave {
+.meninadeux-header-wave {
+  background-image: url("/images/headerWave.svg");
+  background-repeat: repeat-x;
+  height: 7em;
 }
 
-.header-div-photo {
-  display: flex;
-  justify-content: flex-end;
+.header-title {
+  font-family: Caveat Brush;
+  font-weight: bold;
+  font-size: 3em;
+  /* margin-left: 5.1em; */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-gradient);
 }
 
-.header-about-me {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.header-text {
+  font-family: Caveat Brush;
+  font-size: 1.3em;
 }
 
-.body {
-  display: flex;
+.meninadeux-body {
+  /* display: flex; */
   align-items: center;
-  margin: 4em;
-  font-family: cursive;
+  margin: 2em 0;
+  font-family: Caveat Brush;
+  padding: var(--section-padding);
 }
 
 .body-photo {
-  height: 40em;
+  height: 30em;
+  float: left;
 }
 .body-text {
-  text-align: left;
-  font-family: cursive;
+  text-align: justify;
+  font-family: Caveat Brush;
+  font-size: 1.3em;
 }
 
 .body-title-job {
   display: flex;
   width: 100%;
   justify-content: center;
-  font-family: cursive;
+  font-family: Caveat Brush;
   font-weight: bold;
   font-size: 2em;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-gradient);
 }
 
 .body-div-wave {
