@@ -1,0 +1,27 @@
+.body-title-job {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: Caveat Brush;
+  font-weight: bold;
+  font-size: 3em;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-gradient);
+}
+
+.meninadeUX-job-designs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  background: #ffe5ec;
+}
+
+.meninadeux-container-designs {
+  background-color: #ffe5ec;
+  padding: var(--section-padding);
+}
