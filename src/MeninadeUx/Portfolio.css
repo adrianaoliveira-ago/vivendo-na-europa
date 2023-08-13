@@ -1,4 +1,9 @@
-.body-title-job {
+.meninadeux-portfolio-container {
+  background-color: #ffe5ec;
+  padding: var(--section-padding);
+}
+
+.meninadeux-portfolio-title {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -10,18 +15,14 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: var(--bg-gradient);
+  padding: 1em 0;
 }
 
-.meninadeUX-job-designs {
+.meninadeUX-portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 15px;
+  grid-column-gap: 5em;
   grid-row-gap: 0px;
   background: #ffe5ec;
-}
-
-.meninadeux-container-designs {
-  background-color: #ffe5ec;
-  padding: var(--section-padding);
 }

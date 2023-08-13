@@ -1,4 +1,4 @@
-import JobTitle from "./JobTitle";
+import Portfolio from "./Portfolio";
 import "./index.css";
 
 import footerWave from "./footerWave.svg";
@@ -59,7 +59,7 @@ const MeninadeUX = () => {
 
         <div className="meninadeux-header-about-me">
           <div>
-            <h1 className="header-title">About me</h1>
+            <h1 className="header-title">Sobre mim</h1>
             <h2 className="header-text">{data.about}</h2>
           </div>
           <img src={photoHeader} className="header-photo"></img>
@@ -73,7 +73,7 @@ const MeninadeUX = () => {
       </div>
 
       <div id="designs">
-        <JobTitle />
+        <Portfolio />
       </div>
       <div className="footer-wave">
         <img src={footerWave}></img>

@@ -6,7 +6,35 @@
     rgba(246, 174, 101, 1) 70%,
     rgba(255, 215, 124, 1) 100%
   );
-  --section-padding: 0 30em;
+  --section-padding: 0 1rem; /* Default padding for mobile */
+}
+
+@media (min-width: 768px) {
+  /* Tablet breakpoint */
+  :root {
+    --section-padding: 0 5rem; /* Adjust padding for tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop breakpoint */
+  :root {
+    --section-padding: 0 10rem; /* Adjust padding for desktop */
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Desktop breakpoint */
+  :root {
+    --section-padding: 0 15rem; /* Adjust padding for desktop */
+  }
+}
+
+@media (min-width: 1441px) {
+  /* Desktop breakpoint */
+  :root {
+    --section-padding: 0 20rem; /* Adjust padding for desktop */
+  }
 }
 
 .meninadeux-header {
