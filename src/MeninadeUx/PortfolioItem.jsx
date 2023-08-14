@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./PortfolioItem.css";
-import ArrowDownIcon from "./assets/ArrowDownIcon.png";
+import ArrowDownIcon from "./assets/arrowDownIcon.png";
 
 const PortfolioItem = ({ image, title, description }) => {
   const [isVisible, setIsVisible] = useState(false);
