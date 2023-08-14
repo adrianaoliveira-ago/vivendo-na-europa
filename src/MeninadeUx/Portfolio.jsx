@@ -2,9 +2,9 @@ import React from "react";
 import "./Portfolio.css";
 import PortfolioItem from "./PortfolioItem";
 
-import mockup1 from "./mockup1.svg";
-import mockup2 from "./mockup2.svg";
-import mockup3 from "./mockup3.svg";
+import mockup1 from "./assets/mockup1.svg";
+import mockup2 from "./assets/mockup2.svg";
+import mockup3 from "./assets/mockup3.svg";
 
 const Portfolio = () => {
   return (

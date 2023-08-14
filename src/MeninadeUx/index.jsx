@@ -1,9 +1,8 @@
-import Portfolio from "./Portfolio";
 import "./index.css";
-
-import footerWave from "./footerWave.svg";
-import photo2 from "./photo2.svg";
-import photoHeader from "./photoHeader.svg";
+import Portfolio from "./Portfolio";
+import footerWave from "./assets/footerWave.svg";
+import photo2 from "./assets/photo2.svg";
+import photoHeader from "./assets/photoHeader.svg";
 
 const MeninadeUX = () => {
   const data = {
@@ -32,13 +31,6 @@ const MeninadeUX = () => {
     },
   ];
 
-  const scrollTo = () => {
-    const rootElement = document.documentElement;
-    rootElement.scrollTo({
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
       <div className="meninadeux-header">
@@ -59,23 +51,25 @@ const MeninadeUX = () => {
 
         <div className="meninadeux-header-about-me">
           <div>
-            <h1 className="header-title">Sobre mim</h1>
-            <h2 className="header-text">{data.about}</h2>
+            <h1 className="meninadeux-header-title">Sobre mim</h1>
+            <h2 className="meninadeux-header-text">{data.about}</h2>
           </div>
-          <img src={photoHeader} className="header-photo"></img>
+          <img src={photoHeader} className="meninadeux-header-photo"></img>
         </div>
       </div>
 
-      <div className="meninadeux-header-wave"></div>
+      <div className="meninadeux-header-wave" />
+
       <div className="meninadeux-body">
-        <img src={photo2} className="body-photo"></img>
-        <p className="body-text">{data.bodyText}</p>
+        <img src={photo2} className="meninadeux-body-photo"></img>
+        <p className="meninadeux-body-text">{data.bodyText}</p>
       </div>
 
       <div id="designs">
         <Portfolio />
       </div>
-      <div className="footer-wave">
+
+      <div className="meninadeux-footer-wave">
         <img src={footerWave}></img>
       </div>
     </>
