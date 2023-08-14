@@ -2,6 +2,20 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7d3912dc-5bad-4b74-a861-817906134ea6/deploy-status)](https://app.netlify.com/sites/vivendonaeuropa/deploys)
 
+## Setup Instructions
+
+Clone the repo, and fist install the dependencies
+
+```
+npm install
+```
+
+Then, start the local env
+
+```
+npm run dev
+```
+
 ## Todo List
 
 - [x] Example

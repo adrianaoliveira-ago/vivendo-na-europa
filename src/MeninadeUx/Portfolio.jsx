@@ -20,7 +20,7 @@ const Portfolio = () => {
         />
         <PortfolioItem
           image={mockup2}
-          title="Weddign Preparation Design"
+          title="Wedding Preparation Design"
           description="Design contruído para organização de eventos de casamentos onde você tem o acompanhamento de todo o processo de planejamento inclusivo do balanço financeiro."
         />
         <PortfolioItem
